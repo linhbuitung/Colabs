@@ -65,7 +65,9 @@ body {
   }
   #title-picture {
     position: static;
+    display: block;
     margin: auto;
+    width: 300px;
   }
 }
 /* Quotes */
@@ -95,45 +97,57 @@ body {
 
 /* About */
 
+#about {
+  margin: auto;
+}
 .header-text {
   font-weight: 400;
   padding: 4rem 0 1rem;
   text-align: center;
 }
-.about-text-left {
-  padding: 2rem 0;
-  text-align: center;
-}
-.about-text-right {
-  padding: 2rem 0;
-  text-align: center;
-  font-weight: 300;
-}
+
 .about-picture-left {
-  width: 300px;
-  margin: auto;
-  font-weight: 300;
+  float: left;
+  width: 400px;
 }
 .about-picture-right {
-  width: 300px;
-  margin: auto;
+  float: right;
+  width: 400px;
 }
-@media (min-width: 1400px) {
-  .about-picture-left {
-    float: left;
-    width: 400px;
-  }
-  .about-picture-right {
-    float: right;
-    width: 400px;
-  }
+.about-text-left {
+  padding: 1rem 0;
+  text-align: left;
+}
+.about-text-right {
+  padding: 1rem 0;
+  text-align: right;
+}
+@media (max-width: 1400px) {
   .about-text-left {
-    padding: 1rem 0;
-    text-align: left;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
   }
   .about-text-right {
-    padding: 1rem 0;
-    text-align: right;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  .about-picture-left {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    display: block;
+    float: none;
+  }
+  .about-picture-right {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    display: block;
+    float: none;
   }
 }
 
@@ -167,7 +181,7 @@ body {
 
 .padding-footer {
   padding: 0 30%;
-  margin: 0;
+  margin: auto;
 }
 
 .footer-icon {
@@ -175,6 +189,6 @@ body {
   margin: 0 0.2rem;
 }
 .copyright {
-  padding-top: 2%;
+  padding: 2% 0;
   text-align: center;
 }
